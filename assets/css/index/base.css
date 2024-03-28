@@ -223,6 +223,16 @@
   background-color: #ddd;
 }
 
+@media (max-width: 600px) {
+  .schedule-table, .schedule-table th, .schedule-table td {
+    display: block;
+  }
+  .schedule-table th {
+    text-align: right;
+  }
+}
+
+
 .topic-column {
   background-color: #ffc107;
 }
