@@ -2,7 +2,7 @@
 	--lqd-container-width-md: 970px;
 	--lqd-container-width-sm: 750px;
 
-	--lqd-color-primary: #e20b0b;
+	--lqd-color-primary: #ef4375;
 	--lqd-body-text-color: #626974;
 	--lqd-color-link: #5b7bfb;
 	--lqd-color-link-hover: #181b31;
@@ -23,7 +23,7 @@
 	--lqd-color-slate-400: #99a4a8;
 	--lqd-color-red-100: rgba(193, 9, 9, 0.11);
 	--lqd-color-red-300: #f03a22;
-	--lqd-color-red-500: #c41313;
+	--lqd-color-red-500: #ef4375;
 	--lqd-color-yellow-500: #ffda01;
 
 	--lqd-body-font-family: 'Be Vietnam Pro', sans-serif;
@@ -217,6 +217,7 @@
 .schedule-table td {
   padding: 8px;
   text-align: left;
+  color: white;
 }
 
 .schedule-table th {
@@ -234,19 +235,19 @@
 
 
 .topic-column {
-  background-color: #ffc107;
+  background-color: #503cf9;
 }
 
 .speaker-column {
-  background-color: #f8d7da;
+  background-color: #ef4375;
 }
 
 .location-column {
-  background-color: #d1ecf1;
+  background-color: #3190f5;
 }
 
 .time-column {
-  background-color: #d4edda;
+  background-color: #10e4f1;
 }
 
 .single-image-carousel img {
