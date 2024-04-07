@@ -227,6 +227,7 @@
 			</header>
 
 			<main class="content bg-center-top bg-repeat z-2" id="lqd-site-content">
+
 				<div id="lqd-contents-wrap">
 
 					<!-- Start Banner -->
@@ -780,6 +781,26 @@
 													</div>
 												</div>
 											</div>
+                      <div class="accordion-item panel mb-0">
+                        <div class="accordion-heading" id="heading_lqd-accordion-item-threeone" data-id="lqd-accordion-item-three">
+                          <h4 class="accordion-title text-20 font-normal tracking-0" data-controls="lqd-accordion-item-three">
+                            <a class="accordion-btn collapsed" data-bs-toggle="collapse" href="#lqd-accordion-item-threeone" aria-expanded="false" aria-controls="lqd-accordion-item-three">
+                              <span>Yemek ve İçecekler Ücretli mi Olacak?</span>
+                              <span class="accordion-expander">
+																<i class="lqd-icn-ess icon-ion-ios-add"></i>
+																<i class="lqd-icn-ess icon-ion-ios-remove"></i>
+															</span>
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="lqd-accordion-item-threeone" class="accordion-collapse collapse" data-bs-parent="#accordion-wrap" aria-labelledby="heading_lqd-accordion-item-three">
+                          <div class="accordion-content">
+                            <div class="ld-fancy-heading">
+                              <p class="ld-fh-element mb-0/5em">Hayır. Yarışmacılara sağladığımız tüm yiyecek ve içecekler ücretsiz olarak dağıtılacaktır.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 											<div class="accordion-item panel mb-0">
 												<div class="accordion-heading" id="heading_lqd-accordion-item-three" data-id="lqd-accordion-item-three">
 													<h4 class="accordion-title text-20 font-normal tracking-0" data-controls="lqd-accordion-item-three">
@@ -2413,7 +2434,29 @@
 		</div>
 		<!-- Contact modal -->
 
-		<script src="./assets/vendors/jquery.min.js"></script>
+    <div class="popup_wrapper" id="popup">
+      <div class="popup_content">
+        <span class="popup_close" onclick="closePopup()">X</span>
+        <img src="/assets/images/talentia48h/banner.jpeg" alt="" width="600" height="600">
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        openPopup();
+      });
+
+      function openPopup() {
+        document.getElementById('popup').style.display = 'block';
+      }
+
+      function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+      }
+    </script>
+
+
+    <script src="./assets/vendors/jquery.min.js"></script>
 		<script src="./assets/vendors/jquery-ui/jquery-ui.min.js"></script>
 		<script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
 		<script src="./assets/vendors/gsap/minified/gsap.min.js"></script>

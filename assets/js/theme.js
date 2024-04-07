@@ -1,6 +1,17 @@
 
 "use strict";
 
+function openPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+window.onload = openPopup; // Sayfa yüklendiğinde pop-up otomatik olarak açılsın
+
+
 window.liquidPageLoaded = false;
 window.liquidIsElementor = window.liquidIsElementor || document.body.classList.contains('elementor-page');
 window.liquidElements = $ => {
@@ -11309,16 +11320,16 @@ jQuery(document).ready(function ($) {
         uniforms: this.uniforms,
         vertexShader: `
 					uniform vec2 uOffset;
-	
+
 					varying vec2 vUv;
-	
+
 					vec3 deformationCurve(vec3 position, vec2 uv, vec2 offset) {
 						float M_PI = 3.1415926535897932384626433832795;
 						position.x = position.x + (sin(uv.y * M_PI) * offset.x);
 						position.y = position.y + (sin(uv.x * M_PI) * offset.y);
 						return position;
 					}
-	
+
 					void main() {
 						vUv = uv;
 						vec3 newPosition = position;
@@ -11330,15 +11341,15 @@ jQuery(document).ready(function ($) {
 					uniform sampler2D uTexture;
 					uniform float uAlpha;
 					uniform vec2 uOffset;
-	
+
 					varying vec2 vUv;
-	
+
 					vec3 rgbShift(sampler2D texture, vec2 uv, vec2 offset) {
 						float r = texture2D(uTexture,vUv + uOffset).r;
 						vec2 gb = texture2D(uTexture,vUv).gb;
 						return vec3(r,gb);
 					}
-	
+
 					void main() {
 						vec3 color = rgbShift(uTexture,vUv,uOffset);
 						gl_FragColor = vec4(color,uAlpha);
