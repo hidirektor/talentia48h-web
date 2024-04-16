@@ -2524,8 +2524,13 @@
     function closePopup() {
       document.getElementById('popup').style.display = 'none';
     }
-  </script>
 
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        closePopup();
+      }
+    });
+  </script>
 
   <script src="./assets/vendors/jquery.min.js"></script>
   <script src="./assets/vendors/jquery-ui/jquery-ui.min.js"></script>
