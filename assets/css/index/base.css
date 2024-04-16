@@ -233,20 +233,24 @@
   }
 }
 
-.topic-column {
+.team-column {
   background-color: #503cf9;
 }
 
-.speaker-column {
+.leader-column {
   background-color: #ef4375;
 }
 
-.location-column {
+.second-column {
   background-color: #3190f5;
 }
 
-.time-column {
+.thirth-column {
   background-color: #10e4f1;
+}
+
+.fourth-column {
+  background-color: #10f1b5;
 }
 
 .single-image-carousel img {
