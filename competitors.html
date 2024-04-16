@@ -50,7 +50,7 @@
             <div class="navbar-collapse lqd-submenu-default-style inline-flex flex-col items-stretch h-auto" id="main-header-collapse" aria-expanded="false" role="navigation">
               <ul class="main-nav lqd-menu-counter-right main-nav-hover-default flex reset-ul flex-nowrap items-stretch justify-end text-16 link-medium link-black lg:text-14" data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll="true" data-localscroll-options='{"itemsSelector":"> li > a", "trackWindowScroll": true }'>
                 <li>
-                  <a href="#banner">
+                  <a href="./index.html">
                     Anasayfa
                     <sup class="link-sup">01</sup>
                   </a>
@@ -74,13 +74,6 @@
                   <a href="./scoreboard.html">
                     Live ScoreBoard
                     <sup class="link-sup">04</sup>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#site-footer">
-                    İletişim
-                    <sup class="link-sup">05</sup>
                   </a>
                 </li>
               </ul>
@@ -124,10 +117,7 @@
                     <div class="lqd-fancy-menu lqd-custom-menu lqd-menu-td-none leading-1/5em">
                       <ul class="reset-ul" data-localscroll="true" data-localscroll-options='{"itemsSelector":"> li > a"}'>
                         <li class="mb-15">
-                          <a class="flex hover:text-primary" href="#banner">Anasayfa</a>
-                        </li>
-                        <li>
-                          <a class="flex hover:text-primary" href="#site-footer">İletişim</a>
+                          <a class="flex hover:text-primary" href="./index.html">Anasayfa</a>
                         </li>
                       </ul>
                     </div>
@@ -212,7 +202,7 @@
         <div class="mobile-navbar-collapse navbar-collapse collapse text-white" id="lqd-mobile-sec-nav" aria-expanded="false" role="navigation">
           <ul id="mobile-primary-nav" class="lqd-mobile-main-nav main-nav"data-localscroll="true" data-localscroll-options='{"itemsSelector":"> li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
             <li>
-              <a class="mt-0/75em" href="#banner">
+              <a class="mt-0/75em" href="./index.html">
                 Anasayfa
                 <sup class="link-sup">01</sup>
               </a>
@@ -233,12 +223,6 @@
               <a href="./scoreboard.html">
                 Live ScoreBoard
                 <sup class="link-sup">04</sup>
-              </a>
-            </li>
-            <li>
-              <a class="mt-0/75em" href="#">
-                İletişim
-                <sup class="link-sup">05</sup>
               </a>
             </li>
           </ul>
@@ -262,7 +246,7 @@
           <div class="row">
             <div class="col col-12 p-0">
               <div class="lqd-vslider">
-                <div class="lqd-vslider-scrn overflow-hidden w-full relative bg-black" data-lqd-slideshow="true" data-inview="true">
+                <div class="lqd-vslider-scrn overflow-hidden w-full relative bg-black" data-lqd-slideshow="true" data-inview="true" style="height: calc(70vh - 110px);">
 											<span class="lqd-vslider-loader inline-flex absolute z-3 w-60 h-60 top-2/5em right-285em rounded-6 items-center justify-center opacity-0 bg-black-60 transition-all">
 												<span class="inline-flex rounded-full w-35 h-35 border-3 border-white"></span>
 											</span>
@@ -292,37 +276,41 @@
       <!-- End Banner -->
 
       <!-- Start Clients -->
-      <section class="lqd-section clients mb-60 py-55 border-black-10 transition-all md:hidden" data-section-luminosity="light">
-        <div class="container">
-          <table class="schedule-table">
+      <section class="lqd-section clients mb-60 py-55 border-black-10 transition-all" data-section-luminosity="light">
+        <div class="container" style="overflow-x: auto">
+          <table>
+            <thead>
             <tr>
-              <th class="team-column">Takım</th>
-              <th class="leader-column">Takım Kaptanı</th>
-              <th class="second-column">2. Üye</th>
-              <th class="thirth-column">3. Üye</th>
-              <th class="fourth-column">4. Üye</th>
+              <th scope="col">Takım</th>
+              <th scope="col">Takım Kaptanı</th>
+              <th scope="col">2. Üye</th>
+              <th scope="col">3. Üye</th>
+              <th scope="col">4. Üye</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td data-label="Takım" style="background-color: #503cf9; color: white">CodeNova</td>
+              <td data-label="Takım Kaptanı" style="background-color: #ef4375; color: white">Miraç DOĞAN</td>
+              <td data-label="2. Üye" style="background-color: #3190f5; color: white">Hilal ÖNER</td>
+              <td data-label="3. Üye" style="background-color: #10e4f1; color: white">Fatma DURDURAN</td>
+              <td data-label="4 . Üye" style="background-color: #10f1b5; color: white">Bedirhan ÇAKAR</td>
             </tr>
             <tr>
-              <td class="team-column">CodeNova</td>
-              <td class="leader-column">Miraç DOĞAN</td>
-              <td class="second-column">Hilal ÖNER</td>
-              <td class="thirth-column">Fatma DURDURAN</td>
-              <td class="fourth-column">Bedirhan ÇAKAR</td>
+              <td data-label="Takım" style="background-color: #503cf9; color: white">ENİGMA</td>
+              <td data-label="Takım Kaptanı" style="background-color: #ef4375; color: white">Ramazan Semih UĞUR</td>
+              <td data-label="2. Üye" style="background-color: #3190f5; color: white">Furkan SALDUZ</td>
+              <td data-label="3. Üye" style="background-color: #10e4f1; color: white">Osman GÜMÜŞ</td>
+              <td data-label="4 . Üye" style="background-color: #10f1b5; color: white">NaN</td>
             </tr>
             <tr>
-              <td class="team-column">ENİGMA</td>
-              <td class="leader-column">Ramazan Semih UĞUR</td>
-              <td class="second-column">Furkan SALDUZ</td>
-              <td class="thirth-column">Osman GÜMÜŞ</td>
-              <td class="fourth-column">NaN</td>
+              <td data-label="Takım" style="background-color: #503cf9; color: white">Code_Hunters</td>
+              <td data-label="Takım Kaptanı" style="background-color: #ef4375; color: white">Ömer Utku DEMİR</td>
+              <td data-label="2. Üye" style="background-color: #3190f5; color: white">Enes KOÇ</td>
+              <td data-label="3. Üye" style="background-color: #10e4f1; color: white">Kerem GÜLLÜ</td>
+              <td data-label="4 . Üye" style="background-color: #10f1b5; color: white">Mustafa ÇAKIRCA</td>
             </tr>
-            <tr>
-              <td class="team-column">Code_Hunters</td>
-              <td class="leader-column">Ömer Utku DEMİR</td>
-              <td class="second-column">Enes KOÇ</td>
-              <td class="thirth-column">Kerem GÜLLÜ</td>
-              <td class="fourth-column">Mustafa ÇAKIRCA</td>
-            </tr>
+            </tbody>
           </table>
         </div>
       </section>
